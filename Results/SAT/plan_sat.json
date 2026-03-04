@@ -1,0 +1,72 @@
+{
+  "calibration_shots": 0,
+  "contract_type": "hard",
+  "delta": 0.001,
+  "delta_pilot": 0.0005,
+  "delta_production": 0.0005,
+  "depth": 6,
+  "mitigation_shots_per_state": 0,
+  "mu_lower_bound": 0.7414390872799747,
+  "noise_calibration_shots": 0,
+  "optimization_level": 0,
+  "pilot_quality": 0.86328125,
+  "pilot_shots": 512,
+  "qmin": 0.74,
+  "readout_mitigation": false,
+  "risk_bound": {
+    "delta": 0.001,
+    "details": {
+      "calibration_shots": {
+        "noise": 0,
+        "readout": 0
+      },
+      "mu_lower_bound": 0.7414390872799747,
+      "noise_ambiguity_set": null,
+      "noise_corner_evaluation": "worst_corner_only",
+      "noise_corners_total": 1,
+      "noise_worst_case": {
+        "calibration_delta": 0.05,
+        "calibration_shots": 0,
+        "drift_scale": 0.0,
+        "p1": 0.0012,
+        "p2": 0.012,
+        "p_ro": 0.024,
+        "uncertainty_model": "scale",
+        "uncertainty_scale": 0.2
+      },
+      "noise_worst_case_params": {
+        "calibration_delta": 0.05,
+        "calibration_shots": 0,
+        "drift_scale": 0.0,
+        "model": "depolarizing_readout",
+        "p1": 0.0012,
+        "p2": 0.012,
+        "p_ro": 0.024,
+        "uncertainty_model": "scale",
+        "uncertainty_scale": 0.2
+      },
+      "pilot_correction": "split",
+      "pilot_delta_total": 0.0005,
+      "pilot_inference_shots": 256,
+      "pilot_quality": 0.86328125,
+      "pilot_selection_fraction": 0.5,
+      "pilot_selection_shots_total": 256,
+      "pilot_shots_total": 512,
+      "pilot_var": 0.1180267333984375,
+      "required_shots": 1835105,
+      "tail_risk_bound": 0.0004999997918189204,
+      "total_shots_cost_including_pilot": 1835617
+    },
+    "guarantee": "P(achieved_quality >= 0.740000) >= 0.999000 (\u03b4_total=0.001000; pilot \u03b4=0.000500; production \u03b4=0.000500; pilot_correction=split; noise=worst_corner_only). Certificates use RAW counts; readout mitigation affects point estimates only.",
+    "method": "hoeffding"
+  },
+  "shots": 1835105,
+  "shots_max": 0,
+  "simulator_method": "density_matrix",
+  "size": 10,
+  "stopping_rule": {},
+  "task_name": "ghz_success",
+  "task_params": {
+    "n_qubits": 5
+  }
+}
