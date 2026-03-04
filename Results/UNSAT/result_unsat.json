@@ -1,0 +1,13 @@
+{
+  "certificate": {
+    "best_effort_plan": null,
+    "minimal_relaxations": {
+      "suggested_eps_max": 0.25856091272002535,
+      "suggested_qmin": 0.7414390872799747
+    },
+    "reasons": [
+      "Noise uncertainty makes contract impossible (under worst-case errors)"
+    ]
+  },
+  "sat": false
+}
