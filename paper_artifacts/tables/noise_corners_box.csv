@@ -1,0 +1,9 @@
+case_id,label,ambiguity_source,corner_index,p1,p2,p_ro,pilot_quality,mu_lower_bound,shots,certificate_controlling
+ghz3_box_robust,GHZ-3 box robust,declared_box,0,0.0008,0.008,0.016,1.0,0.6110843600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,1,0.0008,0.008,0.024,0.96875,0.5798343600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,2,0.0008,0.012,0.016,0.9375,0.5485843600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,3,0.0008,0.012,0.024,0.90625,0.5173343600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,4,0.0012,0.008,0.016,0.90625,0.5173343600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,5,0.0012,0.008,0.024,0.96875,0.5798343600225204,32,no
+ghz3_box_robust,GHZ-3 box robust,declared_box,6,0.0012,0.012,0.016,0.875,0.4860843600225205,32,yes
+ghz3_box_robust,GHZ-3 box robust,declared_box,7,0.0012,0.012,0.024,0.96875,0.5798343600225204,32,no

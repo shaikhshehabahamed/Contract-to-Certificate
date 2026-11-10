@@ -1,0 +1,7 @@
+case_id,label,status,contract_type,task,workload_size,qmin,shots_max,required_production_shots,total_shot_cost_or_cap,minimal_shots_needed,mu_lower_bound,quality_margin,certified_budget_ratio,minimum_needed_ratio,budget_pressure_ratio,pilot_quality,depth,noise_corners,certificate_corner,risk_method
+ghz5_unsat_tight_budget,GHZ-5 tight budget,UNSAT,hard,ghz_success,5 qubits,0.74,12000,,12000,1835617,0.7414390872799747,0.0014390872799746601,,152.96808333333334,152.96808333333334,0.86328125,6,1,,hoeffding
+ghz5_sat_relaxed_budget,GHZ-5 relaxed budget,SAT,hard,ghz_success,5 qubits,0.74,2000000,1835105,1835617,,0.7414390872799747,0.0014390872799746601,0.9178085,,0.9178085,0.86328125,6,1,0,hoeffding
+ghz3_box_robust,GHZ-3 box robust,SAT,hard,ghz_success,3 qubits,0.2,10000,47,559,,0.4860843600225205,0.28608436002252047,0.0559,,0.0559,0.875,4,8,6,hoeffding
+ghz3_calibrated_box,GHZ-3 calibrated box,SAT,hard,ghz_success,3 qubits,0.5,10000,534,3606,,0.5843701136624183,0.08437011366241831,0.3606,,0.3606,0.859375,4,8,3,hoeffding
+ghz3_anytime_drift_guard,GHZ-3 anytime drift guard,SAT,anytime,ghz_success,3 qubits,0.75,8000,,8000,,0.7810567719863803,0.03105677198638035,1.0,,1.0,0.96875,4,1,0,bernoulli_mixture_cs
+qaoa4_maxcut_reward,QAOA-4 MaxCut reward,SAT,hard,qaoa_maxcut,"4 nodes, p=1",0.35,10000,366,1390,,0.4351042387525554,0.0851042387525554,0.139,,0.139,0.517578125,15,1,0,empirical_bernstein

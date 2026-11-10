@@ -1,0 +1,7 @@
+case_id,label,task,n_qubits,n_nodes,qaoa_layers,workload_size,quality_metric,qmin,delta,contract_type,shots_max,depth_max,p1,p2,p_ro,uncertainty_model,uncertainty_scale,drift_scale,noise_calibration_shots,noise_calibration_delta,risk_method,pilot_shots
+ghz5_unsat_tight_budget,GHZ-5 tight budget,ghz_success,5,,,5 qubits,GHZ success probability,0.74,0.001,hard,12000,200,0.001,0.01,0.02,scale,0.2,0.0,,,hoeffding,512
+ghz5_sat_relaxed_budget,GHZ-5 relaxed budget,ghz_success,5,,,5 qubits,GHZ success probability,0.74,0.001,hard,2000000,200,0.001,0.01,0.02,scale,0.2,0.0,,,hoeffding,512
+ghz3_box_robust,GHZ-3 box robust,ghz_success,3,,,3 qubits,GHZ success probability,0.2,0.001,hard,10000,100,0.001,0.01,0.02,box,0.2,0.0,,,hoeffding,512
+ghz3_calibrated_box,GHZ-3 calibrated box,ghz_success,3,,,3 qubits,GHZ success probability,0.5,0.001,hard,10000,100,0.001,0.01,0.02,calibrated_box,0.1,0.05,512,0.01,hoeffding,1024
+ghz3_anytime_drift_guard,GHZ-3 anytime drift guard,ghz_success,3,,,3 qubits,GHZ success probability,0.75,0.001,anytime,8000,100,0.001,0.01,0.02,scale,0.2,0.0,,,bernoulli_mixture_cs,512
+qaoa4_maxcut_reward,QAOA-4 MaxCut reward,qaoa_maxcut,4,4,1,"4 nodes, p=1",normalized MaxCut reward,0.35,0.01,hard,10000,200,0.001,0.01,0.02,scale,0.2,0.0,,,empirical_bernstein,1024

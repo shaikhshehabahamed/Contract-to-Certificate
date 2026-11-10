@@ -1,0 +1,42 @@
+{
+  "task": {
+    "name": "ghz_success",
+    "params": {
+      "n_qubits": 3
+    }
+  },
+  "qmin": 0.75,
+  "delta": 0.001,
+  "contract_type": "anytime",
+  "fallback": true,
+  "budget": {
+    "shots_max": 8000,
+    "depth_max": 100
+  },
+  "noise": {
+    "model": "depolarizing_readout",
+    "p1": 0.001,
+    "p2": 0.01,
+    "p_ro": 0.02,
+    "uncertainty_model": "scale",
+    "uncertainty_scale": 0.2,
+    "drift_scale": 0.0
+  },
+  "risk_policy": {
+    "method": "bernoulli_mixture_cs",
+    "pilot_shots": 512,
+    "checkpoint_schedule": "geometric",
+    "checkpoint_batch": 128,
+    "checkpoint_ratio": 1.5,
+    "drift_window": 512,
+    "drift_delta_fraction": 0.5,
+    "drift_detect": true,
+    "drift_detector": "page_hinkley",
+    "ph_delta": 0.005,
+    "ph_lambda": 0.05,
+    "ph_min_instances": 5,
+    "min_segment_shots": 512,
+    "max_restarts": 3,
+    "restart_gamma": 0.2
+  }
+}

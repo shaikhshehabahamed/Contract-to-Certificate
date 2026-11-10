@@ -1,0 +1,36 @@
+{
+  "task": {
+    "name": "qaoa_maxcut",
+    "params": {
+      "n_nodes": 4,
+      "p": 1,
+      "gamma": 0.8,
+      "beta": 0.6
+    }
+  },
+  "qmin": 0.35,
+  "delta": 0.01,
+  "contract_type": "hard",
+  "fallback": true,
+  "budget": {
+    "shots_max": 10000,
+    "depth_max": 200
+  },
+  "noise": {
+    "model": "depolarizing_readout",
+    "p1": 0.001,
+    "p2": 0.01,
+    "p_ro": 0.02,
+    "uncertainty_model": "scale",
+    "uncertainty_scale": 0.2,
+    "drift_scale": 0.0
+  },
+  "risk_policy": {
+    "method": "empirical_bernstein",
+    "pilot_shots": 1024,
+    "pilot_delta": 0.005,
+    "pilot_correction": "split",
+    "pilot_selection_fraction": 0.5,
+    "safety_floor_gap": 0.0001
+  }
+}

@@ -1,0 +1,7 @@
+case_id,label,status,statistical_delta,pilot_delta,production_delta,noise_calibration_delta,end_to_end_delta_bound,end_to_end_confidence
+ghz5_unsat_tight_budget,GHZ-5 tight budget,UNSAT,0.001,0.0005,0.0005,0.0,0.001,0.999
+ghz5_sat_relaxed_budget,GHZ-5 relaxed budget,SAT,0.001,0.0005,0.0005,0.0,0.001,0.999
+ghz3_box_robust,GHZ-3 box robust,SAT,0.001,0.0005,0.0005,0.0,0.001,0.999
+ghz3_calibrated_box,GHZ-3 calibrated box,SAT,0.001,0.0005,0.0005,0.01,0.011,0.989
+ghz3_anytime_drift_guard,GHZ-3 anytime drift guard,SAT,0.001,0.0,0.001,0.0,0.001,0.999
+qaoa4_maxcut_reward,QAOA-4 MaxCut reward,SAT,0.01,0.005,0.005,0.0,0.01,0.99
